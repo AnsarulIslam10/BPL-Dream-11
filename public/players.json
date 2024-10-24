@@ -5,7 +5,8 @@
       "country": "Bangladesh",
       "image": "https://i.ibb.co.com/jb7gv4X/shakib.jpg",
       "role": "All-rounder",
-      "battingBowlingType": "Left-hand bat, Left-arm orthodox",
+      "battingType": "Left-hand bat",
+      "bowlingType": "Left-arm orthodox",
       "biddingPrice": 1700000
     },
     {
@@ -14,7 +15,8 @@
       "country": "Bangladesh",
       "image": "https://i.ibb.co.com/Y2205h4/tamim.jpg",
       "role": "Batsman",
-      "battingBowlingType": "Left-hand bat",
+      "battingType": "Left-hand bat",
+      "bowlingType": "Left-arm orthodox",
       "biddingPrice": 1200000
     },
     {
@@ -22,8 +24,9 @@
       "name": "Mushfiqur Rahim",
       "country": "Bangladesh",
       "image": "https://i.ibb.co.com/0y4xpDL/musfiq.jpg",
-      "role": "Wicketkeeper-Batsman",
-      "battingBowlingType": "Right-hand bat",
+      "role": "WK-Batsman",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm medium",
       "biddingPrice": 1300000
     },
     {
@@ -32,7 +35,8 @@
       "country": "Bangladesh",
       "image": "https://i.ibb.co.com/qshy4yP/mahmudullah.jpg",
       "role": "All-rounder",
-      "battingBowlingType": "Right-hand bat, Right-arm offbreak",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm offbreak",
       "biddingPrice": 1100000
     },
     {
@@ -41,7 +45,8 @@
       "country": "Bangladesh",
       "image": "https://i.ibb.co.com/YpSvMDx/mustafizur.jpg",
       "role": "Bowler",
-      "battingBowlingType": "Left-arm fast-medium",
+      "battingType": "Left-hand bat",
+      "bowlingType": "Left-arm fast-medium",
       "biddingPrice": 1400000
     },
     {
@@ -50,7 +55,8 @@
       "country": "New Zealand",
       "image": "https://i.ibb.co.com/dgCF3rR/boult.jpg",
       "role": "Bowler",
-      "battingBowlingType": "Left-arm fast-medium",
+      "battingType": "Left-hand bat",
+      "bowlingType": "Left-arm fast-medium",
       "biddingPrice": 1200000
     },
     {
@@ -59,7 +65,8 @@
       "country": "England",
       "image": "https://i.ibb.co.com/LQKGrSJ/ben-stocks.webp",
       "role": "All-rounder",
-      "battingBowlingType": "Left-hand bat, Right-arm fast-medium",
+      "battingType": "Left-hand bat",
+      "bowlingType": "Right-arm fast-medium",
       "biddingPrice": 1800000
     },
     {
@@ -68,7 +75,8 @@
       "country": "New Zealand",
       "image": "https://i.ibb.co.com/27zZcvX/Kane-Williamson.webp",
       "role": "Batsman",
-      "battingBowlingType": "Right-hand bat",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm offbreak",
       "biddingPrice": 1400000
     },
     {
@@ -77,7 +85,8 @@
       "country": "Pakistan",
       "image": "https://i.ibb.co.com/JyWsj2p/Shaheen.jpg",
       "role": "Bowler",
-      "battingBowlingType": "Left-arm fast",
+      "battingType": "Left-hand bat",
+      "bowlingType": "Left-arm fast",
       "biddingPrice": 1400000
     },
     {
@@ -86,7 +95,8 @@
       "country": "England",
       "image": "https://i.ibb.co.com/ynwLDXH/Joe-root.png",
       "role": "Batsman",
-      "battingBowlingType": "Right-hand bat",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm offbreak",
       "biddingPrice": 1350000
     },
     {
@@ -95,7 +105,8 @@
       "country": "Afghanistan",
       "image": "https://i.ibb.co.com/jJD2cRV/rashid-khan.webp",
       "role": "Bowler",
-      "battingBowlingType": "Right-arm legbreak",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm legbreak",
       "biddingPrice": 1250000
     },
     {
@@ -103,8 +114,9 @@
       "name": "Quinton de Kock",
       "country": "South Africa",
       "image": "https://i.ibb.co.com/W3qzjgq/de-kook.webp",
-      "role": "Wicketkeeper-Batsman",
-      "battingBowlingType": "Left-hand bat",
+      "role": "WK-Batsman",
+      "battingType": "Left-hand bat",
+      "bowlingType": "Left-arm orthodox",
       "biddingPrice": 1500000
     },
     {
@@ -113,7 +125,8 @@
       "country": "Australia",
       "image": "https://i.ibb.co.com/6YM4X2r/maxwell.jpg",
       "role": "All-rounder",
-      "battingBowlingType": "Right-hand bat, Right-arm offbreak",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm offbreak",
       "biddingPrice": 1450000
     },
     {
@@ -122,7 +135,8 @@
       "country": "West Indies",
       "image": "https://i.ibb.co.com/x39yXfH/andre-russell.webp",
       "role": "All-rounder",
-      "battingBowlingType": "Right-hand bat, Right-arm fast",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm fast",
       "biddingPrice": 1900000
     },
     {
@@ -131,7 +145,8 @@
       "country": "Afghanistan",
       "image": "https://i.ibb.co.com/4FkHgGz/mujib.jpg",
       "role": "Bowler",
-      "battingBowlingType": "Right-arm offbreak",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm offbreak",
       "biddingPrice": 1100000
     }
   ]
