@@ -3,7 +3,7 @@
       "playerId": 1,
       "name": "Shakib Al Hasan",
       "country": "Bangladesh",
-      "image": "https://unsplash.com/photos/PY3TDpNjjEw",
+      "image": "https://i.ibb.co.com/jb7gv4X/shakib.jpg",
       "role": "All-rounder",
       "battingBowlingType": "Left-hand bat, Left-arm orthodox",
       "biddingPrice": 1700000
@@ -12,7 +12,7 @@
       "playerId": 2,
       "name": "Tamim Iqbal",
       "country": "Bangladesh",
-      "image": "https://unsplash.com/photos/1drYiOnmD84",
+      "image": "https://i.ibb.co.com/Y2205h4/tamim.jpg",
       "role": "Batsman",
       "battingBowlingType": "Left-hand bat",
       "biddingPrice": 1200000
@@ -21,7 +21,7 @@
       "playerId": 3,
       "name": "Mushfiqur Rahim",
       "country": "Bangladesh",
-      "image": "https://unsplash.com/photos/ZL5SMWmvjm4",
+      "image": "https://i.ibb.co.com/0y4xpDL/musfiq.jpg",
       "role": "Wicketkeeper-Batsman",
       "battingBowlingType": "Right-hand bat",
       "biddingPrice": 1300000
@@ -30,7 +30,7 @@
       "playerId": 4,
       "name": "Mahmudullah Riyad",
       "country": "Bangladesh",
-      "image": "https://unsplash.com/photos/HyVXmsP8PSc",
+      "image": "https://i.ibb.co.com/qshy4yP/mahmudullah.jpg",
       "role": "All-rounder",
       "battingBowlingType": "Right-hand bat, Right-arm offbreak",
       "biddingPrice": 1100000
@@ -39,7 +39,7 @@
       "playerId": 5,
       "name": "Mustafizur Rahman",
       "country": "Bangladesh",
-      "image": "https://unsplash.com/photos/gfKt2LXQzFg",
+      "image": "https://i.ibb.co.com/YpSvMDx/mustafizur.jpg",
       "role": "Bowler",
       "battingBowlingType": "Left-arm fast-medium",
       "biddingPrice": 1400000
@@ -48,7 +48,7 @@
       "playerId": 6,
       "name": "Trent Boult",
       "country": "New Zealand",
-      "image": "https://unsplash.com/photos/j6Wg-RUXu_k",
+      "image": "https://i.ibb.co.com/dgCF3rR/boult.jpg",
       "role": "Bowler",
       "battingBowlingType": "Left-arm fast-medium",
       "biddingPrice": 1200000
@@ -57,7 +57,7 @@
       "playerId": 7,
       "name": "Ben Stokes",
       "country": "England",
-      "image": "https://unsplash.com/photos/ehqJTXLHpV4",
+      "image": "https://i.ibb.co.com/LQKGrSJ/ben-stocks.webp",
       "role": "All-rounder",
       "battingBowlingType": "Left-hand bat, Right-arm fast-medium",
       "biddingPrice": 1800000
@@ -66,7 +66,7 @@
       "playerId": 8,
       "name": "Kane Williamson",
       "country": "New Zealand",
-      "image": "https://unsplash.com/photos/nBuiLbz_j4A",
+      "image": "https://i.ibb.co.com/27zZcvX/Kane-Williamson.webp",
       "role": "Batsman",
       "battingBowlingType": "Right-hand bat",
       "biddingPrice": 1400000
@@ -75,7 +75,7 @@
       "playerId": 9,
       "name": "Shaheen Afridi",
       "country": "Pakistan",
-      "image": "https://unsplash.com/photos/hqhOIZPq8aA",
+      "image": "https://i.ibb.co.com/JyWsj2p/Shaheen.jpg",
       "role": "Bowler",
       "battingBowlingType": "Left-arm fast",
       "biddingPrice": 1400000
@@ -84,7 +84,7 @@
       "playerId": 10,
       "name": "Joe Root",
       "country": "England",
-      "image": "https://unsplash.com/photos/FfcvQ2F2tpc",
+      "image": "https://i.ibb.co.com/ynwLDXH/Joe-root.png",
       "role": "Batsman",
       "battingBowlingType": "Right-hand bat",
       "biddingPrice": 1350000
@@ -93,7 +93,7 @@
       "playerId": 11,
       "name": "Rashid Khan",
       "country": "Afghanistan",
-      "image": "https://unsplash.com/photos/tZzWGHrs2fA",
+      "image": "https://i.ibb.co.com/jJD2cRV/rashid-khan.webp",
       "role": "Bowler",
       "battingBowlingType": "Right-arm legbreak",
       "biddingPrice": 1250000
@@ -102,7 +102,7 @@
       "playerId": 12,
       "name": "Quinton de Kock",
       "country": "South Africa",
-      "image": "https://unsplash.com/photos/gfKt2LXQzFg",
+      "image": "https://i.ibb.co.com/W3qzjgq/de-kook.webp",
       "role": "Wicketkeeper-Batsman",
       "battingBowlingType": "Left-hand bat",
       "biddingPrice": 1500000
@@ -111,7 +111,7 @@
       "playerId": 13,
       "name": "Glenn Maxwell",
       "country": "Australia",
-      "image": "https://unsplash.com/photos/_tB5Zp_eIfg",
+      "image": "https://i.ibb.co.com/6YM4X2r/maxwell.jpg",
       "role": "All-rounder",
       "battingBowlingType": "Right-hand bat, Right-arm offbreak",
       "biddingPrice": 1450000
@@ -120,7 +120,7 @@
       "playerId": 14,
       "name": "Andre Russell",
       "country": "West Indies",
-      "image": "https://unsplash.com/photos/UDq2Tj1BRl4",
+      "image": "https://i.ibb.co.com/x39yXfH/andre-russell.webp",
       "role": "All-rounder",
       "battingBowlingType": "Right-hand bat, Right-arm fast",
       "biddingPrice": 1900000
@@ -129,7 +129,7 @@
       "playerId": 15,
       "name": "Mujeeb Ur Rahman",
       "country": "Afghanistan",
-      "image": "https://unsplash.com/photos/TvRsuLJmD5I",
+      "image": "https://i.ibb.co.com/4FkHgGz/mujib.jpg",
       "role": "Bowler",
       "battingBowlingType": "Right-arm offbreak",
       "biddingPrice": 1100000
