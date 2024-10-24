@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import Footer from './components/Footer/Footer'
 import Hero from './components/Hero/Hero'
@@ -7,11 +8,16 @@ import Players from './components/Players/Players'
 
 function App() {
 
+  const [coin, setCoin] = useState(0)
+  const handleClaimFreeCredit =()=>{
+        setCoin(coin + 10000000)
+  }
+  
   return (
    <>
     <div className='w-11/12 m-auto'>
-      <Navbar></Navbar>
-      <Hero></Hero>
+      <Navbar coin={coin}></Navbar>
+      <Hero handleClaimFreeCredit={handleClaimFreeCredit}></Hero>
       <Players></Players>
       <Newslatter></Newslatter>
     </div>

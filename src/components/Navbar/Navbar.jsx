@@ -1,5 +1,5 @@
 
-export default function Navbar() {
+export default function Navbar({coin}) {
     return (
         <div className="navbar bg-base-100">
             <div className="navbar-start">
@@ -38,7 +38,7 @@ export default function Navbar() {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="border px-6 py-3 rounded-xl shadow-sm font-bold">Coin 0</a>
+                    <a className="border px-6 py-3 rounded-xl shadow-sm font-bold flex items-center gap-2"><i className="fa-solid fa-dollar-sign text-yellow-500 text-xl"></i> {coin}</a>
                 </div>
         </div>
     )

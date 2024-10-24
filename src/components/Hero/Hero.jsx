@@ -1,5 +1,7 @@
+import { useState } from "react"
 
-export default function Hero() {
+export default function Hero({handleClaimFreeCredit}) {
+    
     return (
         <div
             className="hero h-[545px] bg-black rounded-3xl mt-6"
@@ -14,7 +16,7 @@ export default function Hero() {
                         Beyond Boundaries Beyond Limits
                     </p>
                     <div className="p-1 border-2 rounded-xl border-[#E7FE29]">
-                        <button className="btn bg-[#E7FE29] font-bold hover:bg-[#c9db2e]">Claim Free Credit</button>
+                        <button onClick={handleClaimFreeCredit} className="btn bg-[#E7FE29] font-bold hover:bg-[#c9db2e]">Claim Free Credit</button>
                     </div>
                 </div>
             </div>
