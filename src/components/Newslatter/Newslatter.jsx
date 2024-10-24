@@ -15,7 +15,7 @@ export default function Newslatter() {
           <input
             type="text"
             placeholder="Enter your email"
-            className="input input-bordered w-96"
+            className="input input-bordered w-32 sm:w-96"
           />
           <div
             className="rounded-xl"

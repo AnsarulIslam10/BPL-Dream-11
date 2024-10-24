@@ -5,6 +5,7 @@ import Hero from './components/Hero/Hero'
 import Navbar from './components/Navbar/Navbar'
 import Newslatter from './components/Newslatter/Newslatter'
 import Players from './components/Players/Players'
+import SelectedPlayers from './components/SelectedPlayers/SelectedPlayers'
 
 function App() {
 
@@ -18,7 +19,8 @@ function App() {
     <div className='w-11/12 m-auto'>
       <Navbar coin={coin}></Navbar>
       <Hero handleClaimFreeCredit={handleClaimFreeCredit}></Hero>
-      <Players></Players>
+      {/* <Players></Players> */}
+      <SelectedPlayers></SelectedPlayers>
       <Newslatter></Newslatter>
     </div>
       <Footer></Footer>

@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="flex justify-center pt-48">
         <img src="https://i.ibb.co.com/HxPNc8c/logo-footer.png" alt="" />
       </div>
-      <footer className="w-11/12 mx-auto footer  text-white p-10 flex justify-between">
+      <footer className="w-11/12 mx-auto footer  text-white p-10 ">
         <nav>
           <h6 className="text-xl font-bold">About Us</h6>
           <p className="max-w-52 text-gray-300">
