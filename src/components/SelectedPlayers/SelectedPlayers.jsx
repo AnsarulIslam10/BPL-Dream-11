@@ -12,32 +12,6 @@ export default function SelectedPlayers() {
 
   return (
     <div className="mt-6">
-      <div className="flex justify-between items-center">
-        <h2 className="text-2xl font-bold">Selected Player (0/6)</h2>
-
-        <div className="border rounded-xl flex">
-          <button
-            onClick={() => setTab("available")}
-            className={
-              "px-4 rounded-tl-xl py-2 rounded-bl-xl duration-200 font-medium" +
-              (tab === "available" ? " bg-[#E7FE29] text-black" : "")
-            }
-          >
-            Available
-          </button>
-
-          <button
-            onClick={() => setTab("selected")}
-            className={
-              "px-4 duration-200 py-2 rounded-tr-xl rounded-br-xl font-medium" +
-              (tab === "selected" ? " bg-[#E7FE29] text-black" : "")
-            }
-          >
-            Selectet (0)
-          </button>
-        </div>
-      </div>
-
       {/* players card */}
       <div>
         <div className="flex justify-between px-4 py-4 border rounded-xl mt-4">
