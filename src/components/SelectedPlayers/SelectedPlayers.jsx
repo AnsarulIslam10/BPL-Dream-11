@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 
-export default function SelectedPlayers({selectedPlayer}) {
+export default function SelectedPlayers({selectedPlayer, handleRemovePlayer}) {
   const [players, setPlayers] = useState([]);
   const [tab, setTab] = useState("selected");
   useEffect(() => {
@@ -27,7 +27,7 @@ export default function SelectedPlayers({selectedPlayer}) {
               <p className="text-gray-500">{player.role}</p>
             </div>
           </div>
-          <button>
+          <button onClick={()=>handleRemovePlayer(player.playerId)}>
             <i className="fa-solid fa-trash text-2xl text-red-500"></i>
           </button>
         </div>

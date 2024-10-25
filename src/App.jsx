@@ -11,6 +11,7 @@ function App() {
   const [coin, setCoin] = useState(0);
   const [tab, setTab] = useState("available");
   const [selectedPlayer, setSelectedPlayer] = useState([])
+  const [selectedPlayers, setSelectedPlayers] = useState([])
 
 
   const toggle = () => {
@@ -43,6 +44,15 @@ function App() {
         alert('player already selected');
       }
     }
+  }
+
+  const handleRemovePlayer = id =>{
+    const deletedPlayer = selectedPlayer.find(player => player.playerId === id)
+    const updatedPlayers = selectedPlayer.filter(player => player.playerId !== id)
+
+    setSelectedPlayer(updatedPlayers)
+    setSelectedPlayers([...selectedPlayers, deletedPlayer])
+    
   }
 
   return (
@@ -81,7 +91,7 @@ function App() {
             </div>
           </div>
         </div>
-        {tab === 'available'? <Players AddSelectedPlayer={AddSelectedPlayer}></Players> : <SelectedPlayers selectedPlayer={selectedPlayer}></SelectedPlayers>}
+        {tab === 'available'? <Players AddSelectedPlayer={AddSelectedPlayer}></Players> : <SelectedPlayers selectedPlayer={selectedPlayer} handleRemovePlayer={handleRemovePlayer}></SelectedPlayers>}
         <Newslatter></Newslatter>
       </div>
       <Footer></Footer>
