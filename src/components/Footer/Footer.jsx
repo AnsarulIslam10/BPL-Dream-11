@@ -4,7 +4,7 @@ export default function Footer() {
       <div className="flex justify-center pt-48">
         <img src="https://i.ibb.co.com/HxPNc8c/logo-footer.png" alt="" />
       </div>
-      <footer className="w-11/12 mx-auto footer  text-white p-10 ">
+      <footer className="w-11/12 mx-auto footer  text-white p-10 md:justify-around">
         <nav>
           <h6 className="text-xl font-bold">About Us</h6>
           <p className="max-w-52 text-gray-300">
@@ -26,14 +26,14 @@ export default function Footer() {
           <p className="max-w-52 text-gray-300">
             Subscribe to our newsletter for the latest updates.
           </p>
-          <fieldset className="form-control w-80">
-            <div className="join">
+          <fieldset className="form-control sm:w-80">
+            <div className="join mt-2">
               <input
                 type="text"
                 placeholder="Enter your email"
-                className="input input-bordered join-item"
+                className="input input-bordered join-item w-32 text-xs md:text-base md:w-40 lg:w-52"
               />
-              <button className="btn bg-pink-400 border-none join-item">
+              <button className="btn bg-[#E7FE29] text-xs sm:text-lg border-none join-item">
                 Subscribe
               </button>
             </div>
