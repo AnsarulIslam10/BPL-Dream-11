@@ -71,7 +71,7 @@ function App() {
         <Navbar coin={coin}></Navbar>
         <Hero handleClaimFreeCredit={handleClaimFreeCredit}></Hero>
         <div className="mt-6">
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col-reverse sm:grid sm:grid-cols-2 items-center justify-items-center">
             <h2 className="text-2xl font-bold">
               {tab === "available"
                 ? "Available Players"
