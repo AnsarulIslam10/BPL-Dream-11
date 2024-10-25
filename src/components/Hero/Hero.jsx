@@ -10,7 +10,7 @@ export default function Hero({handleClaimFreeCredit}) {
             <div className="hero-content text-neutral-content text-center">
                 <div className="flex flex-col items-center justify-center">
                     <img src="https://i.ibb.co.com/VvY4pSf/banner-main.png" alt="" />
-                    <h1 className="mb-4 text-5xl font-bold mt-6">Assemble Your Ultimate Dream 11 Cricket Team</h1>
+                    <h1 className="mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mt-6">Assemble Your Ultimate Dream 11 Cricket Team</h1>
                     <p className="mb-4">
                         Beyond Boundaries Beyond Limits
                     </p>
