@@ -20,7 +20,7 @@ function App() {
   };
 
   const handleClaimFreeCredit = () => {
-    setCoin(coin + 1000000);
+    setCoin(coin + 2000000);
   };
 
   const AddSelectedPlayer = (player) =>{
@@ -29,10 +29,14 @@ function App() {
       alert('you dont have enough money')
     }else{
       if (!isExist) {
-        if (player.biddingPrice <= coin) {
+        if( selectedPlayer.length > 5){
+          alert('you can only select 6 players')
+        }
+        else if (player.biddingPrice <= coin) {
           setSelectedPlayer([...selectedPlayer, player])
           setCoin(coin - player.biddingPrice)
-        }else{
+        }
+        else{
           alert('you dont have enough money')
         }
       }else{
@@ -48,7 +52,7 @@ function App() {
         <Hero handleClaimFreeCredit={handleClaimFreeCredit}></Hero>
         <div className="mt-6">
           <div className="flex justify-between items-center">
-            <h2 className="text-2xl font-bold">{tab === 'available'? 'Available Players' : 'Selected players (0/6)'}</h2>
+            <h2 className="text-2xl font-bold">{tab === 'available'? 'Available Players' : `Selected players (${selectedPlayer.length}/6)`}</h2>
 
             <div className="border rounded-xl flex">
               <button
