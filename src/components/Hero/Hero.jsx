@@ -1,4 +1,4 @@
-
+import PropTypes from "prop-types"
 export default function Hero({handleClaimFreeCredit}) {
     
     return (
@@ -21,4 +21,8 @@ export default function Hero({handleClaimFreeCredit}) {
             </div>
         </div>
     )
+}
+
+Hero.propTypes={
+    handleClaimFreeCredit: PropTypes.func
 }

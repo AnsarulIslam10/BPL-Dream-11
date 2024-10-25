@@ -4,17 +4,17 @@ export default function Footer() {
       <div className="flex justify-center pt-48">
         <img src="https://i.ibb.co.com/HxPNc8c/logo-footer.png" alt="" />
       </div>
-      <footer className="w-11/12 mx-auto footer  text-white p-10 md:justify-around">
+      <footer className="w-11/12 mx-auto footer  text-gray-300 p-10 md:justify-around">
         <nav>
           <h6 className="text-xl font-bold">About Us</h6>
-          <p className="max-w-52 text-gray-300">
+          <p className="max-w-52 text-gray-400">
             We are a passionate team dedicated to providing the best services to
             our customers.
           </p>
         </nav>
         <nav>
           <h6 className="text-xl font-bold">Quick Links</h6>
-          <ul className="list-disc ml-5 text-gray-300">
+          <ul className="list-disc ml-5 text-gray-400">
             <li>Home</li>
             <li>Services</li>
             <li>About</li>
@@ -23,7 +23,7 @@ export default function Footer() {
         </nav>
         <form>
           <h6 className="text-xl font-bold mb-6">Subscribe</h6>
-          <p className="max-w-52 text-gray-300">
+          <p className="max-w-52 text-gray-400">
             Subscribe to our newsletter for the latest updates.
           </p>
           <fieldset className="form-control sm:w-80">

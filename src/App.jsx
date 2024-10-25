@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Newslatter from "./components/Newslatter/Newslatter";
 import Players from "./components/Players/Players";
 import SelectedPlayers from "./components/SelectedPlayers/SelectedPlayers";
-import { toast } from 'react-toastify';
+import { toast } from "react-toastify";
 
 function App() {
   const [coin, setCoin] = useState(0);
@@ -14,10 +14,9 @@ function App() {
   const [selectedPlayer, setSelectedPlayer] = useState([]);
   const [selectedPlayers, setSelectedPlayers] = useState([]);
 
-
   const handleClaimFreeCredit = () => {
     setCoin(coin + 2000000);
-    toast.success('Credit added to your account')
+    toast.success("Credit added to your account");
   };
 
   const AddSelectedPlayer = (player) => {
@@ -29,16 +28,16 @@ function App() {
     } else {
       if (!isExist) {
         if (selectedPlayer.length > 5) {
-          toast.warning("you can only select 6 players");
+          toast.warning("You can only select 6 players");
         } else if (player.biddingPrice <= coin) {
           setSelectedPlayer([...selectedPlayer, player]);
           setCoin(coin - player.biddingPrice);
-          toast.success(`Congrats !! ${player.name} added to your squad`)
+          toast.success(`Congrats !! ${player.name} added to your squad`);
         } else {
           toast.error("Not enough money to buy this player. Claim some Credit");
         }
       } else {
-        toast.warning("player already selected");
+        toast.warning(`${player.name} already selected`);
       }
     }
   };
@@ -54,16 +53,16 @@ function App() {
     setSelectedPlayer(updatedPlayers);
     setSelectedPlayers([...selectedPlayers, deletedPlayer]);
 
-    toast.success('Player removed succesfully')
+    toast.success("Player removed succesfully");
   };
 
-  const toggle = (tab) =>{
-    setTab(tab)
-  }
+  const toggle = (tab) => {
+    setTab(tab);
+  };
 
-  const backToAvailable=()=>{
-    setTab('available')
-  }
+  const backToAvailable = () => {
+    setTab("available");
+  };
 
   return (
     <>
@@ -80,9 +79,7 @@ function App() {
 
             <div className="border rounded-xl flex">
               <button
-                onClick={() =>
-                  setTab("available")
-                }
+                onClick={() => setTab("available")}
                 className={
                   "px-2 py-1 sm:px-4 rounded-tl-xl sm:py-2 rounded-bl-xl duration-200 font-medium" +
                   (tab === "available" ? " bg-[#E7FE29] text-black" : "")
@@ -92,9 +89,7 @@ function App() {
               </button>
 
               <button
-                onClick={() => 
-                  setTab("selected")
-                }
+                onClick={() => setTab("selected")}
                 className={
                   "px-2 py-1 sm:px-4 duration-200 sm:py-2 rounded-tr-xl rounded-br-xl font-medium" +
                   (tab === "selected" ? " bg-[#E7FE29] text-black" : "")
