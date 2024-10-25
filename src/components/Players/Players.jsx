@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
 
-export default function Players() {
+export default function Players({AddSelectedPlayer}) {
   const [players, setPlayers] = useState([]);
 
   useEffect(() => {
@@ -15,7 +15,6 @@ export default function Players() {
   
   return (
     <div className="mt-6">
-
       {/* players card */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-4" >
         {
@@ -51,7 +50,7 @@ export default function Players() {
                 </div>
                 <div className="flex justify-between items-center text-lg">
                   <h3>Price: ${player.biddingPrice}</h3>
-                  <button className="btn btn-outline border-gray-200">
+                  <button onClick={()=>AddSelectedPlayer(player)} className="btn btn-outline border-gray-200">
                     Choose Player
                   </button>
                 </div>

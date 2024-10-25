@@ -10,6 +10,18 @@ import SelectedPlayers from "./components/SelectedPlayers/SelectedPlayers";
 function App() {
   const [coin, setCoin] = useState(0);
   const [tab, setTab] = useState("available");
+  const [selectedPlayer, setSelectedPlayer] = useState([])
+
+  const AddSelectedPlayer = (player) =>{
+    const isExist = selectedPlayer.find(previousPlayer => previousPlayer.playerId === player.playerId)
+    if (!isExist) {
+      setSelectedPlayer([...selectedPlayer, player])
+    }else{
+      alert('player already selected');
+    }
+  }
+
+
   const toggle = () => {
     if (tab === "selected") {
       <SelectedPlayers></SelectedPlayers>;
@@ -56,7 +68,7 @@ function App() {
             </div>
           </div>
         </div>
-        {tab === 'available'? <Players></Players> : <SelectedPlayers></SelectedPlayers>}
+        {tab === 'available'? <Players AddSelectedPlayer={AddSelectedPlayer}></Players> : <SelectedPlayers selectedPlayer={selectedPlayer}></SelectedPlayers>}
         <Newslatter></Newslatter>
       </div>
       <Footer></Footer>
