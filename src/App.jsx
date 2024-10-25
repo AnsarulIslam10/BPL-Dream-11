@@ -12,15 +12,6 @@ function App() {
   const [tab, setTab] = useState("available");
   const [selectedPlayer, setSelectedPlayer] = useState([])
 
-  const AddSelectedPlayer = (player) =>{
-    const isExist = selectedPlayer.find(previousPlayer => previousPlayer.playerId === player.playerId)
-    if (!isExist) {
-      setSelectedPlayer([...selectedPlayer, player])
-    }else{
-      alert('player already selected');
-    }
-  }
-
 
   const toggle = () => {
     if (tab === "selected") {
@@ -29,8 +20,26 @@ function App() {
   };
 
   const handleClaimFreeCredit = () => {
-    setCoin(coin + 10000000);
+    setCoin(coin + 1000000);
   };
+
+  const AddSelectedPlayer = (player) =>{
+    const isExist = selectedPlayer.find(previousPlayer => previousPlayer.playerId === player.playerId)
+    if (coin <= 0) {
+      alert('you dont have enough money')
+    }else{
+      if (!isExist) {
+        if (player.biddingPrice <= coin) {
+          setSelectedPlayer([...selectedPlayer, player])
+          setCoin(coin - player.biddingPrice)
+        }else{
+          alert('you dont have enough money')
+        }
+      }else{
+        alert('player already selected');
+      }
+    }
+  }
 
   return (
     <>
@@ -63,7 +72,7 @@ function App() {
                   (tab === "selected" ? " bg-[#E7FE29] text-black" : "")
                 }
               >
-                Selectet (0)
+                Selected ({selectedPlayer.length})
               </button>
             </div>
           </div>
