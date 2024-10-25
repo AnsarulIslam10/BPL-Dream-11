@@ -71,8 +71,8 @@ function App() {
         <Navbar coin={coin}></Navbar>
         <Hero handleClaimFreeCredit={handleClaimFreeCredit}></Hero>
         <div className="mt-6">
-          <div className="flex flex-col-reverse sm:grid sm:grid-cols-2 items-center justify-items-center gap-4">
-            <h2 className="text-2xl font-bold">
+          <div className="flex items-center justify-between gap-4">
+            <h2 className="text-xl sm:text-2xl font-bold">
               {tab === "available"
                 ? "Available Players"
                 : `Selected players (${selectedPlayer.length}/6)`}
@@ -84,7 +84,7 @@ function App() {
                   setTab("available")
                 }
                 className={
-                  "px-4 rounded-tl-xl py-2 rounded-bl-xl duration-200 font-medium" +
+                  "px-2 py-1 sm:px-4 rounded-tl-xl sm:py-2 rounded-bl-xl duration-200 font-medium" +
                   (tab === "available" ? " bg-[#E7FE29] text-black" : "")
                 }
               >
@@ -96,7 +96,7 @@ function App() {
                   setTab("selected")
                 }
                 className={
-                  "px-4 duration-200 py-2 rounded-tr-xl rounded-br-xl font-medium" +
+                  "px-2 py-1 sm:px-4 duration-200 sm:py-2 rounded-tr-xl rounded-br-xl font-medium" +
                   (tab === "selected" ? " bg-[#E7FE29] text-black" : "")
                 }
               >

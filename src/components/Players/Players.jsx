@@ -43,14 +43,14 @@ export default function Players({AddSelectedPlayer}) {
                 <h3 className="px-4 py-2 bg-gray-200 rounded-xl">{player.role}</h3>
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-3">Rating</h3>
-                <div className="flex justify-between items-center text-xl mb-4">
+                <h3 className="font-semibold mb-3">Rating: <span className="text-yellow-500">{player.rating}</span></h3>
+                <div className="flex justify-between items-center mb-4 font-semibold gap-4">
                   <h3>{player.battingType}</h3>
                   <h3>{player.bowlingType}</h3>
                 </div>
-                <div className="flex justify-between items-center text-lg">
-                  <h3>Price: ${player.biddingPrice}</h3>
-                  <button onClick={()=>AddSelectedPlayer(player)} className="btn btn-outline border-gray-200">
+                <div className="flex justify-between items-center">
+                  <h3 className="font-semibold">Price: ${player.biddingPrice}</h3>
+                  <button onClick={()=>AddSelectedPlayer(player)} className="btn btn-outline font-normal border-gray-200">
                     Choose Player
                   </button>
                 </div>

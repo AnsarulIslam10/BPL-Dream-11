@@ -17,12 +17,7 @@ export default function Newslatter() {
             placeholder="Enter your email"
             className="input input-bordered w-32 sm:w-96"
           />
-          <div
-            className="rounded-xl"
-            style={{
-              background: "url(https://i.ibb.co.com/mXk5C2G/btn.png)",
-            }}
-          >
+          <div className="rounded-xl bg-[#E7FE29]">
             <button className="btn btn-ghost">Subscribe</button>
           </div>
         </div>
