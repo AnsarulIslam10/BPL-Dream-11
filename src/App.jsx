@@ -57,6 +57,10 @@ function App() {
     toast.success('Player removed succesfully')
   };
 
+  const toggle = (tab) =>{
+    setTab(tab)
+  }
+
   const backToAvailable=()=>{
     setTab('available')
   }
@@ -108,7 +112,7 @@ function App() {
             selectedPlayer={selectedPlayer}
             handleRemovePlayer={handleRemovePlayer}
             backToAvailable={backToAvailable}
-            setTab={tab}
+            toggle={toggle}
           ></SelectedPlayers>
         )}
         <Newslatter></Newslatter>

@@ -1,18 +1,10 @@
-import { useEffect } from "react";
-import { useState } from "react";
 
 export default function SelectedPlayers({
   selectedPlayer,
   handleRemovePlayer,
-  tab
+  toggle
 }) {
-  const [players, setPlayers] = useState([]);
   
-  useEffect(() => {
-    fetch("./players.json")
-      .then((res) => res.json())
-      .then((data) => setPlayers(data));
-  }, []);
 
   return (
     <div className="mt-6">
@@ -41,7 +33,7 @@ export default function SelectedPlayers({
         ))}
       </div>
       <div className="p-1 border-2 rounded-xl border-[#E7FE29] inline-block">
-        <button onClick={()=> tab = 'available'}
+        <button onClick={()=> toggle('available')}
           className="btn bg-[#E7FE29] font-bold hover:bg-[#c9db2e]"
         >
           Add More Player
