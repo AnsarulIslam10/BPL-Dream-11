@@ -1,3 +1,5 @@
+import { data } from "autoprefixer";
+
 export default function Footer() {
   return (
     <div className="bg-black">
@@ -38,8 +40,9 @@ export default function Footer() {
               </button>
             </div>
           </fieldset>
-        </form>
+        </form> 
       </footer>
+      <h3 className="text-center py-6 border-t border-gray-600 text-gray-400">&#64; {new Date().getFullYear()} BPL Dream 11, All Rights Reserved.</h3>
     </div>
   );
 }

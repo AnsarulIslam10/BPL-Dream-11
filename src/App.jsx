@@ -37,7 +37,7 @@ function App() {
           toast.error("Not enough money to buy this player. Claim some Credit");
         }
       } else {
-        toast.warning(`${player.name} already selected`);
+        toast.warning(`player already selected`);
       }
     }
   };
