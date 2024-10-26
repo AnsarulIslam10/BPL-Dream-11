@@ -71,7 +71,7 @@ function App() {
         <Hero handleClaimFreeCredit={handleClaimFreeCredit}></Hero>
         <div className="mt-6">
           <div className="flex items-center justify-between gap-4">
-            <h2 className="text-xl sm:text-2xl font-bold">
+            <h2 className="text-base sm:text-2xl font-bold">
               {tab === "available"
                 ? "Available Players"
                 : `Selected players (${selectedPlayer.length}/6)`}
@@ -81,7 +81,7 @@ function App() {
               <button
                 onClick={() => setTab("available")}
                 className={
-                  "px-2 py-1 sm:px-4 rounded-tl-xl sm:py-2 rounded-bl-xl duration-200 font-medium" +
+                  "px-2 py-1 sm:px-4 rounded-tl-xl sm:py-2 rounded-bl-xl duration-200 text-xs font-medium" +
                   (tab === "available" ? " bg-[#E7FE29] text-black" : "")
                 }
               >
@@ -91,7 +91,7 @@ function App() {
               <button
                 onClick={() => setTab("selected")}
                 className={
-                  "px-2 py-1 sm:px-4 duration-200 sm:py-2 rounded-tr-xl rounded-br-xl font-medium" +
+                  "px-2 py-1 sm:px-4 duration-200 sm:py-2 rounded-tr-xl rounded-br-xl text-xs font-medium" +
                   (tab === "selected" ? " bg-[#E7FE29] text-black" : "")
                 }
               >

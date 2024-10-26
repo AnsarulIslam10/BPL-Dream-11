@@ -32,7 +32,7 @@ export default function SelectedPlayers({
           </div>
         ))}
       </div>
-      <div className="p-1 border-2 rounded-xl border-[#E7FE29] inline-block">
+      <div className="p-1 border-2 rounded-xl border-[#E7FE29] inline-block mt-4">
         <button
           onClick={() => toggle("available")}
           className="btn bg-[#E7FE29] font-bold hover:bg-[#c9db2e]"

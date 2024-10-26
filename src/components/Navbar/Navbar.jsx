@@ -44,7 +44,7 @@ export default function Navbar({ coin }) {
 
       
       <div className=" hidden lg:flex">
-        <ul className="flex gap-4 text-xl font-semibold px-1">
+        <ul className="flex gap-4 text-xl font-medium px-1">
           <li>
             <a>Home</a>
           </li>
