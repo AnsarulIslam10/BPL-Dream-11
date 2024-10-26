@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 export default function Navbar({ coin }) {
   return (
     <div className="navbar bg-base-100">
@@ -40,32 +41,33 @@ export default function Navbar({ coin }) {
         <img src="https://i.ibb.co.com/NCPgr7q/logo.png" alt="" />
       </div>
 
-      <div className="">
-
-      
-      <div className=" hidden lg:flex">
-        <ul className="flex gap-4 text-xl font-medium px-1">
-          <li>
-            <a>Home</a>
-          </li>
-          <li>
-            <a>Fixture</a>
-          </li>
-          <li>
-            <a>Teams</a>
-          </li>
-          <li>
-            <a>Schedules</a>
-          </li>
-        </ul>
-      </div>
-      <div className="navbar">
-        <a className="border px-6 py-3 rounded-xl shadow-sm font-bold flex items-center gap-2">
-          <i className="fa-solid fa-dollar-sign text-yellow-500 text-xl"></i>{" "}
-          {coin}
-        </a>
-      </div>
+      <div>
+        <div className=" hidden lg:flex">
+          <ul className="flex gap-4 text-xl font-medium px-1">
+            <li>
+              <a>Home</a>
+            </li>
+            <li>
+              <a>Fixture</a>
+            </li>
+            <li>
+              <a>Teams</a>
+            </li>
+            <li>
+              <a>Schedules</a>
+            </li>
+          </ul>
+        </div>
+        <div className="navbar">
+          <a className="border px-6 py-3 rounded-xl shadow-sm font-bold flex items-center gap-2">
+            <i className="fa-solid fa-dollar-sign text-yellow-500 text-xl"></i>{" "}
+            {coin}
+          </a>
+        </div>
       </div>
     </div>
   );
 }
+Navbar.propTypes = {
+  coin: PropTypes.number,
+};
