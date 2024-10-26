@@ -1,5 +1,3 @@
-import { data } from "autoprefixer";
-
 export default function Footer() {
   return (
     <div className="bg-black">
